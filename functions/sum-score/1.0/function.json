@@ -1,0 +1,41 @@
+{
+  "description": "Description",
+  "label": "Sum Score",
+  "category": "Misc",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Record",
+        "validations": {
+          "required": true
+        },
+        "additional": {
+          "model": ["name", { "properties": ["name", "kind"] }]
+        }
+      },
+      "name": "record",
+      "label": "Record",
+      "info": "TBD",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "validations": {
+          "required": true
+        },
+        "output": {
+          "type": "Number"
+        }
+      },
+      "name": "score",
+      "label": "As",
+      "info": "The resulting score"
+    }
+  ],
+  "yields": "NONE"
+}
